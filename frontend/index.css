@@ -1,0 +1,259 @@
+
+body {
+    background-image: url("https://us.123rf.com/450wm/kazanlena/kazanlena1703/kazanlena170300087/75227020-cream-texture-background-paper-beige-color-parchment-paper-website-background.jpg?ver=6");
+    margin: 0;
+    padding: 10px;
+    font-family: monospace;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-bottom: 6rem;
+  }
+
+button {
+  border-radius: 12px;
+  background-color: rgb(235, 225, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.container {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    display: none;
+}
+   
+.add-beer-form {
+  flex-basis: 50%;
+    flex-grow: 1;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 40%;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  box-shadow: 10px 10px 5px grey;
+
+  background-image: url("https://media.istockphoto.com/photos/beer-background-picture-id155429750?k=6&m=155429750&s=612x612&w=0&h=2eoP_Jd_rf3E5SWogj9ogmzLbmAgYO7AwlY5P5NWGTM=");
+
+}
+
+#beer-form-submit {
+  border-radius: 12px;
+  background-color: rgb(235, 225, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+#beer-collection {
+    margin: 2rem;
+    display: inline-block;
+    text-align: center;
+    justify-self: center;
+}
+
+.beer-card {
+    justify-self: center;
+    text-align: center;
+    border: grey solid 1px;
+    background-color: #efefef;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px grey;
+    background-image: url("https://media.istockphoto.com/photos/beer-background-picture-id155429750?k=6&m=155429750&s=612x612&w=0&h=2eoP_Jd_rf3E5SWogj9ogmzLbmAgYO7AwlY5P5NWGTM=");
+}
+  
+.beer-image {
+    justify-self: center;
+    height: 12rem;
+    width: auto;
+}
+
+.beer-button{
+  background-color: rgb(235, 225, 211);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+
+.search-bar {
+    justify-self: center;
+    text-align: center;
+    
+}
+
+.search-bar button {
+  border-radius: 12px;
+  background-color: rgb(235, 225, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+
+.login-signup {
+    float: right;
+    display: block;
+    border-radius: 12px;
+  background-color: rgb(235, 225, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.sign-in {
+    float: right;
+    display: none;
+}
+
+.sign-in button {
+  border-radius: 12px;
+  background-color: rgb(235, 225, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.sign-up {
+    float: right;
+    display: none;
+}
+
+.sign-up button {
+  border-radius: 12px;
+  background-color: rgb(235, 225, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+
+.logo {
+    height: 7rem;
+  padding: 1rem;
+}
+
+.beer-render-div {
+    flex-basis: 50%;
+    flex-grow: 1;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 70%;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  box-shadow: 10px 10px 5px grey;
+
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ffb7cfea-2fa0-458c-8e1c-9d94b9d2f2dd/dz628h-c0c1a280-418d-4d85-a262-f760c1a76d6c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZmYjdjZmVhLTJmYTAtNDU4Yy04ZTFjLTlkOTRiOWQyZjJkZFwvZHo2MjhoLWMwYzFhMjgwLTQxOGQtNGQ4NS1hMjYyLWY3NjBjMWE3NmQ2Yy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.OaNnb9ubRCZylwyoXEknDgP21Q-bB8fPkV-27gKMlyo");
+}
+
+.beer-render-div button {
+  border-radius: 12px;
+  background-color: rgb(235, 225, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+#beer-render {
+  position: relative;
+  overflow-y: scroll;
+}
+
+.beer-image-single-render {
+    height: 15rem;
+    width: auto;
+    display: block;
+    float: left;
+    border-radius: 10%;
+}
+
+.review-image-single-render {
+  height: 5rem;
+    width: auto;
+  display: block;
+  float: left;
+  border-radius: 10%;
+}
+
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--sj56u7aW--/c_scale,f_auto,fl_progressive,q_80,w_800/f5x9s02e7w1wwtzfr3si.jpg")
+}
+
+#welcome {
+    float: right;
+    display: none;
+}
+
+#logout-btn {
+    float: right;
+    display: none;
+    border-radius: 12px;
+  background-color: rgb(235, 225, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+
+  .review-card {
+    padding: 1rem;
+    border-radius: 10%;
+
+  }
+
+  .review-content {
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .review-by-user {
+    font-style: italic;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 50px !important;
+    width: 150px !important;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+
+  }
+
+  .fa-facebook {
+    color: rgb(43, 43, 219);
+  }
+
+  .fa-twitter{
+    color: aqua;
+  }
+
+  .fa-google{
+    color: white;
+  }
+
+  .fa-instagram{
+    color: rgb(49, 124, 221);
+  }
+
+  .fa-youtube{
+    color: red;
+  }
+
+  .close-card {
+    font-size: 10px;
+    float: right;
+    border-radius: 200px;
+  background-color: rgb(235, 225, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+  }

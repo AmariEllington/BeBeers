@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BeBeers</title>
+</head>
+<body>
+  <!-- <style> body { background-image: url("");} </style> -->
+    <div>
+        <div >
+          <nav>
+            <img class="logo" src="https://i.imgur.com/S3k7Ubi.png" alt="BeBeers Logo" />
+            <button class="login-signup" id="signup-btn">Sign Up</button>
+            <button class="login-signup" id="login-btn">Login</button>
+            <form class="sign-in">
+                <input type="search" placeholder="username" aria-label="username" name='username'>
+                <button type="submit">Login</button>
+            </form>
+            <form class="sign-up">
+                <input type="search" placeholder="username" aria-label="username" name='username'>
+                <button type="submit">Sign Up</button>
+            </form>
+            <button id="logout-btn">Logout</button>
+            <p id="welcome"></p>
+          </nav>      
+        </div>
+
+        <div class="headers" style="float: center">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link  btn btn-warning btn-outline-dark" id="all-beers-btn" href="#">All Beers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  btn btn-warning btn-outline-dark"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Beers by Country</a>
+              <div class="dropdown-menu" id="country-dropdown">
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  btn btn-warning btn-outline-dark"  dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Beers by Style</a>
+              <div class="dropdown-menu" id="style-dropdown">
+
+              </div>
+            </li>
+            <li class="nav-item" id="new-beer-button"  >
+              <a class="nav-link  btn btn-warning btn-outline-dark"  href="#"  >Add a New Beer</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <form id="search-bar-form">
+              <input type="search" placeholder="Search" aria-label="Search" id="search">
+              <button type="submit">Search</button>
+          </form>
+        </div>
+        
+    </div>
+    <!-- form -->
+    <div class="container">
+        <form class="add-beer-form" >
+          <h3>Create a beer!</h3>
+  
+          <input type="text" name="menu-name" value="" placeholder="Beer's Name" class="input-text">
+          <br>
+          <input type="text" name=" menu-image" value="" placeholder="Beer's Image URL" class="input-text">
+          <br>
+          <input type="text" name="menu-brewery" value="" placeholder="Brewery's Name" class="input-text">
+          <br>
+          <textarea type="text" name="menu-notes" value="" placeholder="Beer's Notes" class="input-text" rows="5" cols="40"></textarea>
+          <br>
+          <input type="text" name="menu-abv" value="" placeholder="Beer's ABV" class="input-text">
+          <br>
+          <select name="menu-style" id="menu-style-selectors">
+
+          </select>
+          <br>
+          <select name="menu-countries" id="menu-countries-selectors">
+
+          </select>
+            <br>
+          <input id="beer-form-submit" type="submit" name="submit" value="Create New Beer" class="submit">
+        </form>
+      </div>    
+     
+    </div>
+    
+
+    <div data-spy="scroll" data-target="#beer-collection" data-offset="0" id="render-beer" >
+
+    </div>
+
+
+    <div id="beer-collection" href="#render-beer">
+
+    </div>
+
+   
+
+    <footer class="footer">
+      <div>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="https://www.youtube.com/watch?v=ahu-10KeBaA" target="_blank" class="fa fa-youtube"></a>
+          
+      </div>
+      
+
+      
+    </footer>
+
+
+
+
+    
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+
+</html>
